@@ -1,25 +1,14 @@
 import React from "react";
-import Channel from "./Channel";
-import "../index.css";
-class ColorPalette extends React.Component {
-  render() {
-    const swatchStyle = { backgroundColor: 'rgba(0,0,0,alpha)'};
+import Swatch from './Swatch'
+
+const Palette = () => {
     return (
-      <main id="root" className = 'swatch' style = {swatchStyle}>
-        <div>
-          <ul className="palette">
-            <li className="swatch" style={swatchStyle}>
-              <div> rgb (</div>
-              <Channel />
-              <Channel />
-              <Channel />
-              <div> ); </div>
-            </li>
-          </ul>
-        </div>
-      </main>
+      <ul className = 'palette'>
+        <Swatch red = {0} green = {0} blue = {0}/>
+        <Swatch red = {0} green = {0} blue = {0}/>
+        <Swatch red = {0} green = {0} blue = {0}/>
+      </ul>
     );
   }
-}
 
-export default ColorPalette;
+export default Palette;
