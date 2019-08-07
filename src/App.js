@@ -1,10 +1,10 @@
 import React from 'react';
-import Palette from './Components/Palette'
+import Controller from './Components/Controller'
 import './index.css'
 
 const App = () => {
   return (
-    <Palette/>
+    <Controller/>
   );
 }
 

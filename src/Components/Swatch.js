@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import Channel from "./Channel";
 
-const Swatch = ({ red, green, blue }) => {
+const Swatch = ({ red, green, blue}) => {
+
   let [r, setR] = useState(red);
   let [g, setG] = useState(green);
   let [b, setB] = useState(blue);
