@@ -5,11 +5,23 @@ import Palette from './Palette'
 export class Controller extends React.Component {
   constructor(props) {
     super(props)
-    console.log(this.props)
+
+
+    // this.addPalette = this.addPalette.bind(this)
+    // this.removePalette = this.removePalette.bind(this)
+
+
   }
+
   render() {
+    const palettes = [<Palette/>, <Palette/>]
+
     return (
-      <Palette/>
+      palettes.map(palette => {
+        for (palette of palettes) {
+          return <Palette/>
+        }
+      })
     )
   }
 
